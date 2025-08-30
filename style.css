@@ -1,0 +1,149 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+  background: #f6f8fa;
+  padding-bottom: 70px; /* space for bottom nav */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #0a5745;
+  color: white;
+  font-size: 20px;
+}
+
+header i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Search */
+.search-box {
+  position: relative;
+  margin: 15px 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #eaeaea;
+  font-size: 14px;
+}
+
+.search-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 20px;
+  gap: 10px;
+}
+
+.categories button {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #eaeaea;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.categories button.active,
+.categories button:hover {
+  background: #0a5745;
+  color: white;
+}
+
+/* Menu Grid */
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 15px 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 30%;
+  height: 150px;
+  justify-content: center;
+  object-fit: cover;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin: 10px;
+  color: #222;
+}
+
+.card p {
+  margin: 0 10px 10px;
+  color: #777;
+  font-size: 13px;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #0a5745;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0 0 15px 15px;
+}
+
+.card button:hover {
+  background: #084233;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav i {
+  font-size: 20px;
+  color: #0a5745;
+  cursor: pointer;
+}
